@@ -1,41 +1,64 @@
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
+import { Button } from "../ui/button";
+import {
+    Search,
+    Grid,
+    Link,
+    FileText,
+    CheckSquare
+} from "lucide-react";
 
 const navItems = [
-    { title: "Dashboard", href: "/" },
-    { title: "Content Tasks", href: "/content-tasks" },
-    { title: "Backlink Manager", href: "/back-link-manager" },
-    { title: "Normal Tasks", href: "/normal-tasks" },
+    { title: "Dashboard", href: "/", icon: Grid },
+    { title: "Content Tasks", href: "/content-tasks", icon: FileText },
+    { title: "Backlink Manager", href: "/back-link-manager", icon: Link },
+    { title: "Normal Tasks", href: "/normal-tasks", icon: CheckSquare },
 ];
 
 const Sidebar: React.FC = () => {
     return (
-        <aside className="h-full w-64 border-r bg-background">
-            <div className="px-6 py-4 text-lg font-semibold border-b">
-                Dashboard
+        <aside className="h-full w-68 border-r bg-background flex flex-col justify-between">
+            <div>
+                <div className="px-6 py-6 border-b flex items-center gap-2">
+                    <Button className="bg-primary text-primary-foreground rounded-md">
+                        <Search className="h-6 w-6" />
+                    </Button>
+                    <h1 className="text-2xl font-semibold">Dashboard</h1>
+                </div>
+
+                <nav className="space-y-1 p-3">
+                    {navItems.map((item) => (
+                        <NavLink
+                            key={item.href}
+                            to={item.href}
+                            className={({ isActive }) =>
+                                cn(
+                                    "block rounded-md px-3 py-3 text-sm transition-colors font-medium",
+                                    "hover:bg-muted hover:text-foreground flex gap-2 items-center",
+                                    isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground"
+                                )
+                            }
+                        >
+                            <item.icon className="h-5 w-5" />
+                            {item.title}
+                        </NavLink>
+                    ))}
+                </nav>
             </div>
 
-            <nav className="space-y-1 p-3">
-                {navItems.map((item) => (
-                    <NavLink
-                        key={item.href}
-                        to={item.href}
-                        className={({ isActive }) =>
-                            cn(
-                                "block rounded-md px-3 py-2 text-sm transition-colors font-medium",
-                                "hover:bg-muted hover:text-foreground",
-                                isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground"
-                            )
-                        }
-                    >
-                        {item.title}
-                    </NavLink>
-                ))}
-            </nav>
-
-            <div className="mt-auto p-4">
+            <div className="p-4 border-t">
                 <ThemeToggle />
+
+                <div className="bg-primary text-primary-foreground p-4 rounded-md mt-3">
+                    <h3 className="text-sm font-semibold mb-2">
+                        Need help?
+                    </h3>
+                    <p className="text-xs">
+                        Check Our Documentation
+                    </p>
+                </div>
             </div>
         </aside>
     );
