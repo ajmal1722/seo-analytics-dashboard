@@ -1,4 +1,4 @@
-import type { KpiCard } from "../type/index";
+import type { KpiCard } from "../type/dashboard";
 import {
     ChartArea,
     ArrowUpRight,

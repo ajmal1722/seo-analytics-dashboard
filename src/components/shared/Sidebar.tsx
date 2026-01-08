@@ -12,8 +12,8 @@ import {
 
 const navItems = [
     { title: "Dashboard", href: "/", icon: Grid },
-    { title: "Content Tasks", href: "/content-tasks", icon: FileText },
     { title: "Backlink Manager", href: "/back-link-manager", icon: Link },
+    { title: "Content Tasks", href: "/content-tasks", icon: FileText },
     { title: "Normal Tasks", href: "/normal-tasks", icon: CheckSquare },
 ];
 

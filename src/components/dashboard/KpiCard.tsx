@@ -1,4 +1,4 @@
-import type { KpiCard } from "../../type/index";
+import type { KpiCard } from "../../type/dashboard";
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import { kpiData } from "../../data/dashboard";
