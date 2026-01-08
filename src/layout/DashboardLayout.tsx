@@ -20,7 +20,7 @@ const DashboardLayout = () => {
                 </div>
 
                 <Suspense fallback={<Spinner />}>
-                    <main className="flex-1 overflow-y-auto p-4">
+                    <main className="flex-1 overflow-y-auto p-5 py-10">
                         <Outlet />
                     </main>
                 </Suspense>

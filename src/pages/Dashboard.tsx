@@ -1,9 +1,13 @@
+import TitleCard from "../components/shared/TitleCard";
 import KpiCardList from "../components/dashboard/KpiCard";
 
 const Dashboard: React.FC = () => {
     return (
         <div>
-            <h1>Dashboard</h1>
+            <TitleCard
+                title="Dashboard"
+                description="Welcome back! Here's your SEO performance overview."
+            />
             <KpiCardList />
         </div>
     );

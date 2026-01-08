@@ -1,8 +1,11 @@
-
+import TitleCard from "@/components/shared/TitleCard";
 const ContentTasks: React.FC = () => {
     return (
         <div>
-            <h1>ContentTasks</h1>
+            <TitleCard
+                title="Content Tasks"
+                description="Create and manage your content creation tasks"
+            />
         </div>
     );
 };

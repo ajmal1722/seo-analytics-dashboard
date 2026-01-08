@@ -1,8 +1,11 @@
-
+import TitleCard from "@/components/shared/TitleCard";
 const NormalTasks: React.FC = () => {
     return (
         <div>
-            <h1>NormalTasks</h1>
+            <TitleCard
+                title="Normal Tasks"
+                description="Organize tasks into groups and manage your workflow"
+            />
         </div>
     );
 };

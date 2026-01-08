@@ -1,8 +1,12 @@
+import TitleCard from "@/components/shared/TitleCard";
 
 const BackLinkManager: React.FC = () => {
     return (
         <div>
-            <h1>BackLinkManager</h1>
+            <TitleCard
+                title="BackLink Manager"
+                description="Manage your backlink outreach and maintenance tasks"
+            />
         </div>
     );
 };
