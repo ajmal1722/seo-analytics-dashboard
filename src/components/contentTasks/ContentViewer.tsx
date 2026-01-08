@@ -19,7 +19,7 @@ const ContentViewer: React.FC<Props> = ({ task, open, onOpenChange }) => {
 
     return (
         <Sheet open={open} onOpenChange={onOpenChange}>
-            <SheetContent className="w-full sm:max-w-xl md:max-w-2xl">
+            <SheetContent className="w-full sm:max-w-xl md:max-w-2xl p-6">
                 <SheetHeader className="mb-6">
                     <div className="space-y-2">
                         <div className="flex gap-2">
