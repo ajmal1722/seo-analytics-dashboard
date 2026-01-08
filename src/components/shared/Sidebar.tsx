@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
     { title: "Dashboard", href: "/" },
@@ -24,7 +25,7 @@ const Sidebar: React.FC = () => {
                             cn(
                                 "block rounded-md px-3 py-2 text-sm transition-colors font-medium",
                                 "hover:bg-muted hover:text-foreground",
-                                isActive ? "bg-muted text-foreground" : "text-muted-foreground"
+                                isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground"
                             )
                         }
                     >
@@ -32,6 +33,10 @@ const Sidebar: React.FC = () => {
                     </NavLink>
                 ))}
             </nav>
+
+            <div className="mt-auto p-4">
+                <ThemeToggle />
+            </div>
         </aside>
     );
 };
