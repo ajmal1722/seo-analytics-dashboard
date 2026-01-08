@@ -27,18 +27,29 @@ const BacklinkTable: React.FC<Props> = ({ tasks }) => {
                 </TableHeader>
 
                 <TableBody>
-                    {tasks.map((task) => (
-                        <TableRow key={task.id}>
-                            <TableCell>{task.task}</TableCell>
-                            <TableCell className="text-muted-foreground">
-                                {task.url}
+                    {tasks.length === 0 ? (
+                        <TableRow>
+                            <TableCell
+                                colSpan={6}
+                                className="h-24 text-center text-muted-foreground"
+                            >
+                                No backlink tasks found
                             </TableCell>
-                            <TableCell>{task.dueDate}</TableCell>
-                            <TableCell>{task.priority}</TableCell>
-                            <TableCell>{task.status}</TableCell>
-                            <TableCell>{task.assignee}</TableCell>
                         </TableRow>
-                    ))}
+                    ) : (
+                        tasks.map((task) => (
+                            <TableRow key={task.id}>
+                                <TableCell>{task.task}</TableCell>
+                                <TableCell className="text-muted-foreground">
+                                    {task.url}
+                                </TableCell>
+                                <TableCell>{task.dueDate}</TableCell>
+                                <TableCell>{task.priority}</TableCell>
+                                <TableCell>{task.status}</TableCell>
+                                <TableCell>{task.assignee}</TableCell>
+                            </TableRow>
+                        ))
+                    )}
                 </TableBody>
             </Table>
         </div>
