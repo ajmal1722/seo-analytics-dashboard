@@ -1,5 +1,8 @@
 import TitleCard from "../components/shared/TitleCard";
 import KpiCardList from "../components/dashboard/KpiCard";
+import ChartCard from "../components/dashboard/ChartCard";
+// import TrafficChart from "../components/dashboard/TrafficChart";
+// import KeywordPositionChart from "../components/dashboard/KeywordPositionChart";
 
 const Dashboard: React.FC = () => {
     return (
@@ -9,6 +12,16 @@ const Dashboard: React.FC = () => {
                 description="Welcome back! Here's your SEO performance overview."
             />
             <KpiCardList />
+
+            {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <ChartCard title="Organic Traffic">
+                    <TrafficChart />
+                </ChartCard>
+
+                <ChartCard title="Keyword Position Distribution">
+                    <KeywordPositionChart />
+                </ChartCard>
+            </div> */}
         </div>
     );
 };

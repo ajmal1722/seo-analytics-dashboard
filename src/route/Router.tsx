@@ -7,10 +7,13 @@ const ContentTasks = lazy(() => import("../pages/ContentTasks"));
 const BackLinkManager = lazy(() => import("../pages/BackLinkManager"));
 const NormalTasks = lazy(() => import("../pages/NormalTasks"));
 
+import ErrorPage from "../pages/ErrorPage";
+
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <DashboardLayout />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 index: true,

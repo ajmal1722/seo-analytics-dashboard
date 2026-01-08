@@ -19,8 +19,14 @@ const DashboardLayout = () => {
                     <Navbar />
                 </div>
 
-                <Suspense fallback={<Spinner />}>
-                    <main className="flex-1 overflow-y-auto p-5 py-10">
+                <Suspense
+                    fallback={
+                        <div className="flex flex-1 items-center justify-center">
+                            <Spinner />
+                        </div>
+                    }
+                >
+                    <main className="flex-1 overflow-y-auto p-5 lg:py-10 py-6">
                         <Outlet />
                     </main>
                 </Suspense>
