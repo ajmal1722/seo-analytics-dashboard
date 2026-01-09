@@ -7,6 +7,8 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import type { BacklinkTask } from '@/type/backLink';
+import { User2, Calendar } from "lucide-react";
+import { formatDateString } from '@/lib/dateFormatter';
 
 interface Props {
     tasks: BacklinkTask[];
@@ -19,10 +21,10 @@ const BacklinkTable: React.FC<Props> = ({ tasks }) => {
                     <TableRow>
                         <TableHead>Task</TableHead>
                         <TableHead>URL</TableHead>
+                        <TableHead>Assignee</TableHead>
                         <TableHead>Due Date</TableHead>
                         <TableHead>Priority</TableHead>
                         <TableHead>Status</TableHead>
-                        <TableHead>Assignee</TableHead>
                     </TableRow>
                 </TableHeader>
 
@@ -40,13 +42,23 @@ const BacklinkTable: React.FC<Props> = ({ tasks }) => {
                         tasks.map((task) => (
                             <TableRow key={task.id}>
                                 <TableCell>{task.task}</TableCell>
-                                <TableCell className="text-muted-foreground">
+                                <TableCell className="text-primary">
                                     {task.url}
                                 </TableCell>
-                                <TableCell>{task.dueDate}</TableCell>
+                                <TableCell>
+                                    <div className="flex items-center gap-2">
+                                        <User2 className="h-4 w-4" />
+                                        {task.assignee}
+                                    </div>
+                                </TableCell>
+                                <TableCell>
+                                    <div className="flex items-center gap-2">
+                                        <Calendar className="h-4 w-4" />
+                                        {formatDateString(task.dueDate)}
+                                    </div>
+                                </TableCell>
                                 <TableCell>{task.priority}</TableCell>
                                 <TableCell>{task.status}</TableCell>
-                                <TableCell>{task.assignee}</TableCell>
                             </TableRow>
                         ))
                     )}

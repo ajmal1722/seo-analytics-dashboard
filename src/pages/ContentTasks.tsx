@@ -7,7 +7,7 @@ import { contentTasks } from "@/data/contentTasks";
 import type { ContentTask } from "@/type/contentTask";
 
 const ContentTasks: React.FC = () => {
-    const [tasks, setTasks] = useState<ContentTask[]>(contentTasks);
+    const tasks = contentTasks;
     const [selectedTask, setSelectedTask] = useState<ContentTask | null>(null);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
 

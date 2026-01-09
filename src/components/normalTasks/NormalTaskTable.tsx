@@ -8,6 +8,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { formatDateString } from '@/lib/dateFormatter';
 
 interface Props {
     tasks: NormalTask[];
@@ -43,7 +44,7 @@ const NormalTaskTable: React.FC<Props> = ({ tasks }) => {
                             <TableRow key={task.id}>
                                 <TableCell className="font-medium">{task.task}</TableCell>
                                 <TableCell>{task.category}</TableCell>
-                                <TableCell>{task.dueDate}</TableCell>
+                                <TableCell>{formatDateString(task.dueDate)}</TableCell>
                                 <TableCell>
                                     <Badge variant="outline">{task.priority}</Badge>
                                 </TableCell>

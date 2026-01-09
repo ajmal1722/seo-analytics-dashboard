@@ -8,6 +8,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { formatDateString } from '@/lib/dateFormatter';
 
 interface Props {
     tasks: ContentTask[];
@@ -56,7 +57,7 @@ const ContentTaskTable: React.FC<Props> = ({ tasks, onTaskClick }) => {
                                 <TableCell>
                                     <Badge variant="outline">{task.priority}</Badge>
                                 </TableCell>
-                                <TableCell>{task.dueDate}</TableCell>
+                                <TableCell>{formatDateString(task.dueDate)}</TableCell>
                                 <TableCell className="text-muted-foreground">
                                     {task.assignee}
                                 </TableCell>
