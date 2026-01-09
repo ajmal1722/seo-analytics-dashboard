@@ -17,8 +17,8 @@ The project focuses on UI composition, state management, and clean component arc
 Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/ajmal1722/seo-analytics-dashboard.git
+cd seo-analytics-dashboard
 ```
 
 Install dependencies
@@ -37,7 +37,7 @@ Open in browser
 
 http://localhost:5173
 
-## � Implemented Screens & Features
+## 📱 Implemented Screens & Features
 
 ### 1. Dashboard
 
@@ -101,10 +101,10 @@ http://localhost:5173
 
 ## 📦 Deployment
 
-The application is deployed using Vercel / Cloudflare Pages.
+The application is deployed using Vercel.
 
-- **Live URL:** `<live-app-url>`
-- **GitHub Repository:** `<github-repo-url>`
+- **Live URL:** `https://seo-analytics-dashboard-ld1ckx197-ajmal1722s-projects.vercel.app/`
+- **GitHub Repository:** `https://github.com/ajmal1722/seo-analytics-dashboard`
 
 ## ✅ Summary
 

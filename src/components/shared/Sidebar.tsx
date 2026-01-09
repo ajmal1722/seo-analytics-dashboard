@@ -37,7 +37,7 @@ const Sidebar: React.FC = () => {
                                 cn(
                                     "block rounded-md px-3 py-3 text-sm transition-colors font-medium",
                                     "hover:bg-muted hover:text-foreground flex gap-2 items-center",
-                                    isActive ? "bg-primary text-primary-foreground hover:bg-primary" : "text-muted-foreground"
+                                    isActive ? "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground" : "text-muted-foreground"
                                 )
                             }
                         >
