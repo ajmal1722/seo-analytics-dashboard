@@ -5,8 +5,6 @@ import ContentFilters from "@/components/contentTasks/ContentFilters";
 import ContentViewer from "@/components/contentTasks/ContentViewer";
 import { contentTasks } from "@/data/contentTasks";
 import type { ContentTask } from "@/type/contentTask";
-import { Button } from "@/components/ui/button";
-import { Plus } from "lucide-react";
 
 const ContentTasks: React.FC = () => {
     const [tasks, setTasks] = useState<ContentTask[]>(contentTasks);
@@ -45,11 +43,6 @@ const ContentTasks: React.FC = () => {
             <TitleCard
                 title="Content Tasks"
                 description="Manage your content calendar, drafts, and publication schedule."
-                action={
-                    <Button>
-                        <Plus className="mr-2 h-4 w-4" /> New Content
-                    </Button>
-                }
             />
 
             <ContentFilters

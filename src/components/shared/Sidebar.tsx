@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
                     <Button className="bg-primary text-primary-foreground rounded-md">
                         <Search className="h-6 w-6" />
                     </Button>
-                    <h1 className="text-2xl font-semibold">Dashboard</h1>
+                    <h1 className="text-xl font-semibold">SEO Analytics</h1>
                 </div>
 
                 <nav className="space-y-1 p-3">
