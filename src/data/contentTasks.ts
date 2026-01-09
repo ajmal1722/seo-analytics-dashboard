@@ -12,7 +12,12 @@ export const contentTasks: ContentTask[] = [
         wordCount: 1500,
         targetKeyword: "future of seo",
         assignee: "Alex Writer",
-        content: 'Sample content'
+        content: `
+            This article explores upcoming SEO trends in 2026, including AI-powered search,
+            zero-click results, voice search optimization, and evolving ranking factors.
+            The goal is to provide actionable insights for marketers to stay ahead of
+            algorithm changes and maintain organic visibility.
+        `
     },
     {
         id: "2",
@@ -25,7 +30,11 @@ export const contentTasks: ContentTask[] = [
         wordCount: 800,
         targetKeyword: "analytics dashboard tool",
         assignee: "Sarah Design",
-        content: 'Sample content'
+        content: `
+            This landing page highlights the core features and benefits of the new analytics
+            dashboard. It focuses on clear value propositions, conversion-focused copy,
+            feature breakdowns, testimonials, and strong CTAs to drive product sign-ups.
+        `
     },
     {
         id: "3",
@@ -38,7 +47,11 @@ export const contentTasks: ContentTask[] = [
         wordCount: 400,
         targetKeyword: "n/a",
         assignee: "Mike Marketing",
-        content: 'Sample content'
+        content: `
+            This newsletter summarizes the latest blog posts, feature updates, and marketing
+            tips from the past week. It aims to keep subscribers engaged with short insights,
+            helpful links, and a friendly, conversational tone.
+        `
     },
     {
         id: "4",
@@ -52,7 +65,10 @@ export const contentTasks: ContentTask[] = [
         targetKeyword: "new features",
         assignee: "Alex Writer",
         content: `
-            🚀 We just launched our new dashboard! Check it out here: [link] #SEO #Analytics
+            🚀 We’ve officially launched our new analytics dashboard!
+            Track performance, uncover insights, and grow faster—all in one place.
+            👉 Check it out here: [link]
+            #SEO #Analytics #ProductUpdate
         `
     },
     {
@@ -66,6 +82,10 @@ export const contentTasks: ContentTask[] = [
         wordCount: 2000,
         targetKeyword: "backlink optimization",
         assignee: "Guest Expert",
-        content: 'Sample content'
+        content: `
+            This in-depth guide covers backlink optimization strategies such as link audits,
+            anchor text optimization, toxic link removal, and earning high-authority links.
+            It is designed for SEO professionals looking to improve rankings and domain authority.
+        `
     }
 ];
