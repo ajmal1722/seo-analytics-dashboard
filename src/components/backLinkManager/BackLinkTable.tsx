@@ -9,6 +9,7 @@ import {
 import type { BacklinkTask } from '@/type/backLink';
 import { User2, Calendar } from "lucide-react";
 import { formatDateString } from '@/lib/dateFormatter';
+import PriorityBadge from "../shared/PriorityBadge";
 
 interface Props {
     tasks: BacklinkTask[];
@@ -57,7 +58,9 @@ const BacklinkTable: React.FC<Props> = ({ tasks }) => {
                                         {formatDateString(task.dueDate)}
                                     </div>
                                 </TableCell>
-                                <TableCell>{task.priority}</TableCell>
+                                <TableCell>
+                                    <PriorityBadge priority={task.priority} />
+                                </TableCell>
                                 <TableCell>{task.status}</TableCell>
                             </TableRow>
                         ))

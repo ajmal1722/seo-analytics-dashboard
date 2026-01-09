@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { formatDateString } from '@/lib/dateFormatter';
+import PriorityBadge from "../shared/PriorityBadge";
 
 interface Props {
     tasks: ContentTask[];
@@ -55,7 +56,7 @@ const ContentTaskTable: React.FC<Props> = ({ tasks, onTaskClick }) => {
                                     <Badge variant="outline">{task.status}</Badge>
                                 </TableCell>
                                 <TableCell>
-                                    <Badge variant="outline">{task.priority}</Badge>
+                                    <PriorityBadge priority={task.priority} />
                                 </TableCell>
                                 <TableCell>{formatDateString(task.dueDate)}</TableCell>
                                 <TableCell className="text-muted-foreground">
