@@ -103,7 +103,7 @@ http://localhost:5173
 
 The application is deployed using Vercel.
 
-- **Live URL:** `https://seo-analytics-dashboard-ld1ckx197-ajmal1722s-projects.vercel.app/`
+- **Live URL:** `https://seo-analytics-dashboard-xjlz.vercel.app/`
 - **GitHub Repository:** `https://github.com/ajmal1722/seo-analytics-dashboard`
 
 ## ✅ Summary
