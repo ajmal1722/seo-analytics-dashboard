@@ -11,7 +11,7 @@ import { trafficData } from "../../data/dashboard";
 
 const TrafficChart = () => {
     return (
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" className={'dark:text-muted'}>
             <LineChart data={trafficData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="date" />
@@ -20,7 +20,7 @@ const TrafficChart = () => {
                 <Line
                     type="monotone"
                     dataKey="traffic"
-                    stroke="hsl(var(--primary))"
+                    stroke="red"
                     strokeWidth={2}
                     dot={false}
                 />

@@ -10,14 +10,14 @@ import { keywordPositionData } from "../../data/dashboard";
 
 const KeywordPositionChart = () => {
     return (
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" className={'dark:text-muted'}>
             <BarChart data={keywordPositionData}>
                 <XAxis dataKey="range" />
                 <YAxis />
                 <Tooltip />
                 <Bar
                     dataKey="count"
-                    fill="hsl(var(--primary))"
+                    fill="red"
                     radius={[6, 6, 0, 0]}
                 />
             </BarChart>

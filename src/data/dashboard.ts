@@ -42,7 +42,7 @@ export const trafficData = [
     { date: "Feb", traffic: 1900 },
     { date: "Mar", traffic: 1700 },
     { date: "Apr", traffic: 2300 },
-    { date: "May", traffic: 2600 },
+    { date: "May", traffic: 2200 },
     { date: "Jun", traffic: 3100 },
 ];
 
