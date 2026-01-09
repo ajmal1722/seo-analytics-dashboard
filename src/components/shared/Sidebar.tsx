@@ -37,11 +37,11 @@ const Sidebar: React.FC = () => {
                                 cn(
                                     "block rounded-md px-3 py-3 text-sm transition-colors font-medium",
                                     "hover:bg-muted hover:text-foreground flex gap-2 items-center",
-                                    isActive ? "bg-primary text-primary-foreground" : "text-muted-foreground"
+                                    isActive ? "bg-primary text-primary-foreground hover:bg-primary" : "text-muted-foreground"
                                 )
                             }
                         >
-                            <item.icon className="h-5 w-5" />
+                            <item.icon className="h-4 w-4" />
                             {item.title}
                         </NavLink>
                     ))}
