@@ -52,3 +52,54 @@ export const keywordPositionData = [
     { range: "11-20", count: 41 },
     { range: "21-50", count: 65 },
 ];
+
+export const topKeywordsData = [
+    {
+        id: "1",
+        keyword: "digital marketing",
+        position: 3,
+        change: 2,
+        traffic: "12.5k",
+        difficulty: 85
+    },
+    {
+        id: "2",
+        keyword: "seo tools",
+        position: 5,
+        change: -1,
+        traffic: "8.2k",
+        difficulty: 72
+    },
+    {
+        id: "3",
+        keyword: "content strategy",
+        position: 8,
+        change: 4,
+        traffic: "5.1k",
+        difficulty: 64
+    },
+    {
+        id: "4",
+        keyword: "link building",
+        position: 12,
+        change: 1,
+        traffic: "3.4k",
+        difficulty: 78
+    },
+    {
+        id: "5",
+        keyword: "keyword research",
+        position: 2,
+        change: 0,
+        traffic: "15.3k",
+        difficulty: 60
+    },
+    {
+        id: "6",
+        keyword: "technical seo",
+        position: 15,
+        change: -3,
+        traffic: "2.8k",
+        difficulty: 88
+    }
+];
